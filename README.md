@@ -5,13 +5,12 @@ This project explores the relationship between music listening habits and produc
 ## **Dataset Description**
 
 ### **Music Listening Data**
-- **Source**: Spotify API
+- **Source**: Spotify API and AcousticBrainz API (where Spotify's API was limited or deprecated)
 - **Fields**:
   - `Track Name`: Title of the song.
   - `Artist`: Artist of the song.
   - `Genre`: Genre classification of the song (e.g., Pop, Classical, Jazz).
   - `Tempo`: Beats per minute (BPM) of the song.
-  - `Energy`: A measure of the song’s intensity and activity (range: 0-1).
   - `Loudness`: Volume of the track in decibels.
   - `Listening Timestamp`: The time when the song was played.
  
@@ -23,8 +22,8 @@ This project explores the relationship between music listening habits and produc
   - `Task Completion Time`: Duration required to complete the task.
 
 ## **Project Objectives**
-1. Analyze the relationship between music attributes and productivity.
-2. Build a predictive model to recommend optimal music genres and tempos for specific task types.
+1. Analyze the correlatation between music features and productivity during different task types.
+2. Build a predictive model to recommend optimal music genres for specific task types.
 3. Provide visualizations and actionable insights for personalized productivity strategies.
 
 ## **Project Plan**
