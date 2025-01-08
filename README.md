@@ -19,8 +19,6 @@ This project explores the relationship between music listening habits and produc
 - **Source**: Manually logged or extracted from a time-tracking tool.
 - **Fields**:
   - `Task Type`: The type of the task (e.g., Writing, Coding, Reading).
-  - `Start Time`: Start time of the work/study session.
-  - `End Time`: End time of the work/study session.
   - `Duration`: Total hours worked in the session.
   - `Task Completion Time`: Duration required to complete the task.
 
