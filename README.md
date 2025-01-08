@@ -1,6 +1,9 @@
 # Music Listening Habits and Productivity Analysis
 ## **Project Overview**
-This project explores the relationship between music listening habits and productivity during study or work sessions. By analyzing personal data on music preferences, task performance, and working hours, the project aims to uncover patterns and provide actionable insights for optimizing productivity through personalized music recommendations.
+This project explores the relationship between music listening habits and productivity during study or work sessions. By analyzing personal data on music preferences, task performance, and working hours, the project seeks to uncover patterns and provide actionable insights for optimizing productivity through personalized music recommendations. The project combines data-driven analysis techniques, including exploratory data analysis (EDA), machine learning models, and visualization, to generate meaningful findings. 
+
+## **Motivation**
+Music is a powerful tool for enhancing focus and productivity. This project aims to analyze how specific music attributes such as genre, tempo, and loudness influence productivity during various task types. By understanding these relationships, we can create personalized music strategies for optimal work or study performance.
 
 ## **Dataset Description**
 
@@ -29,37 +32,57 @@ This project explores the relationship between music listening habits and produc
 ## **Project Plan**
 
 ### **Data Collection**
-   - Retrieve music listening data using the Spotify API.
-   - Track productivity scores, task types, and working hours manually or via apps.
-   - Align timestamps to link music listening sessions with productivity data.
+- **Music Data**:
+  - Retrieved using Spotify API for track metadata and listening history.
+  - Supplemented with audio features such as tempo and loudness from AcousticBrainz API.
+- **Productivity Data**:
+  - Manually recorded task types, durations, and timestamps.
+  - Synced with music listening data for temporal alignment.
 
 ### **Data Preprocessing**
-   - Clean and merge datasets
-   - Feature engineering:
-     - Derive metrics like average tempo, energy levels, and genre distribution per session.
+- **Steps**:
+  - Cleaned datasets for consistency and removed duplicates.
+  - Merged music and productivity data based on timestamps.
+  - Feature engineering:
+    - Average tempo, loudness, and genre distribution per session.
+   
 
 ### **Exploratory Data Analysis (EDA)**
-   - Analyze correlations between:
-     - Music attributes (tempo, energy, genre) and productivity.
-     - Working hours and productivity scores.
-   - Visualize patterns using scatterplots, heatmaps, and time-series graphs.
-
+- **Techniques Used**:
+  - Correlation analysis between music attributes and productivity.
+  - Visualization of:
+    - Music attributes over time.
+    - Productivity trends across task types and working hours.
+  - Tools: Scatterplots, heatmaps, and time-series graphs.
+ 
 ### **Modeling**
-   - **Clustering**:
-     - Group sessions based on music attributes and productivity to identify patterns.
-   - **Regression**:
-     - Predict productivity scores using features like tempo, energy, and task type.
-   - **Time-Series Analysis**:
-     - Model productivity trends over time and forecast optimal music attributes for future tasks.
-    
+- **Techniques**:
+  - **Clustering**: Identify groups of sessions with similar music attributes and productivity levels.
+  - **Regression**: Predict productivity scores using features like tempo, loudness, and task type.
+  - **Time-Series Analysis**: Forecast productivity based on music listening trends.
+- **Goal**: Create a model that suggests music attributes for optimal productivity.
+
+### **Findings**
+
 ### **Insights and Recommendations**
    - Provide a summary of findings:
      - Best genres or tempos for productivity.
      - Ideal working hours for specific music types.
    - Develop actionable recommendations:
      - Suggest personalized playlists for study/work.
-    
-### **Visualization and Reporting**
-   - Build an interactive dashboard:
-     - Display trends and insights.
-     - Provide real-time productivity recommendations.
+
+### **Limitations and Future Work**
+- **Limitations**:
+  - Incomplete or missing data for some tracks due to API restrictions.
+  - Manual logging of productivity data, leading to potential inconsistencies.
+- **Future Plans**:
+  - Automate productivity tracking.
+  - Explore advanced machine learning techniques for more accurate predictions.
+  - Create a recommendation system for generating personalized playlists.
+ 
+## **Visualization and Reporting**
+- **Deliverables**:
+  - Visualizes trends, correlations, and recommendations.
+  - Suggests music genres and tempos for productivity improvement.
+
+## **Repository Structure**
