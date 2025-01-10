@@ -46,9 +46,19 @@ Music is a powerful tool for enhancing focus and productivity. This project aims
   - Missing values in Tempo and Loudness have been replaced with genre-specific medians where available, and the overall median as a fallback.
   - Feature engineering:
     - Average tempo, loudness, and genre distribution per session.
-   
+    - Added interaction features such as Tempo_Loudness_Interaction
 
 ### **Exploratory Data Analysis (EDA)**
+- **Findings**:
+  - **Feature Relationships**:
+    - Loudness and Genre_Target_Encoding show the strongest correlations with Productivity.
+    - Scatterplots revealed nonlinear relationships between music features and productivity.
+  - **Feature Importance**:
+    - Genre_Target_Encoding: 68.35% contribution to productivity prediction.
+    - Tempo_Loudness_Interaction: 24.44%.
+    - Tempo: 18.40%.
+    - Loudness: 17.83%.
+ 
 - **Techniques Used**:
   - Correlation analysis between music attributes and productivity.
   - Visualization of:
@@ -60,17 +70,14 @@ Music is a powerful tool for enhancing focus and productivity. This project aims
 - **Techniques**:
   - **Clustering**: Identify groups of sessions with similar music attributes and productivity levels.
   - **Regression**: Predict productivity scores using features like tempo, loudness, and task type.
-  - **Time-Series Analysis**: Forecast productivity based on music listening trends.
 - **Goal**: Create a model that suggests music attributes for optimal productivity.
 
-### **Findings**
-
 ### **Insights and Recommendations**
-   - Provide a summary of findings:
+   - Provided a summary of findings:
      - Best genres or tempos for productivity.
      - Ideal working hours for specific music types.
-   - Develop actionable recommendations:
-     - Suggest personalized playlists for study/work.
+   - Cluster-Based recommendations:
+     - Recommended playlists with genres scoring high on Genre_Target_Encoding.
 
 ### **Limitations and Future Work**
 - **Limitations**:
@@ -83,7 +90,6 @@ Music is a powerful tool for enhancing focus and productivity. This project aims
  
 ## **Visualization and Reporting**
 - **Deliverables**:
-  - Visualizes trends, correlations, and recommendations.
-  - Suggests music genres and tempos for productivity improvement.
-
-## **Repository Structure**
+  - Feature importance bar charts, scatterplots, and cluster heatmaps.
+  - Random Forest Regression and K-Means clustering outputs.
+  - Suggests music genres and tempos for productivity improvement based on clustering insights.
