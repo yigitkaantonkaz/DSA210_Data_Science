@@ -43,6 +43,7 @@ Music is a powerful tool for enhancing focus and productivity. This project aims
 - **Steps**:
   - Cleaned datasets for consistency and removed duplicates.
   - Merged music and productivity data based on timestamps.
+  - Missing values in Tempo and Loudness have been replaced with genre-specific medians where available, and the overall median as a fallback.
   - Feature engineering:
     - Average tempo, loudness, and genre distribution per session.
    
